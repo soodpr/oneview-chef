@@ -20,11 +20,11 @@ describe 'oneview_test::hypervisor_cluster_profile_add' do
   end
 
   it 'does nothing when it exists and is alike' do
-    allow_any_instance_of(OneviewSDK::HypervisorClusterProfile).to receive(:exists?).and_return(true)
-    allow_any_instance_of(OneviewSDK::HypervisorClusterProfile).to receive(:retrieve!).and_return(true)
-    allow_any_instance_of(OneviewSDK::HypervisorClusterProfile).to receive(:like?).and_return(true)
-    expect_any_instance_of(OneviewSDK::HypervisorClusterProfile).to_not receive(:update)
-    expect_any_instance_of(OneviewSDK::HypervisorClusterProfile).to_not receive(:add)
+    allow_any_instance_of(base_sdk::HypervisorClusterProfile).to receive(:exists?).and_return(true)
+    allow_any_instance_of(base_sdk::HypervisorClusterProfile).to receive(:retrieve!).and_return(true)
+    allow_any_instance_of(base_sdk::HypervisorClusterProfile).to receive(:like?).and_return(true)
+    expect_any_instance_of(base_sdk::HypervisorClusterProfile).to_not receive(:update)
+    expect_any_instance_of(base_sdk::HypervisorClusterProfile).to_not receive(:add)
     expect(real_chef_run).to add_oneview_hypervisor_cluster_profile('HypervisorClusterProfile1')
   end
 end
