@@ -15,6 +15,6 @@
 #
 
 oneview_hypervisor_cluster_profile 'TestHypervisorClusterProfile' do
-  client node['oneview_test']['client']
+  client node['oneview_test']['client800']
   action :remove
 end

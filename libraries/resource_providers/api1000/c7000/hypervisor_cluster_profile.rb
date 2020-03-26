@@ -13,7 +13,7 @@ module OneviewCookbook
   module API1000
     module C7000
       # HypervisorClusterProfile API1000 C7000 provider
-      class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
+      class HypervisorClusterProfileProvider < OneviewCookbook::API800::HypervisorClusterProfileProvider
       end
     end
   end

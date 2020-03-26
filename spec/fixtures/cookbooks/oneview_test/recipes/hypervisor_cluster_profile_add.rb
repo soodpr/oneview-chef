@@ -14,7 +14,7 @@
 # specific language governing permissions and limitations under the License.
 
 oneview_hypervisor_cluster_profile 'TestHypervisorClusterProfile' do
-  client node['oneview_test']['client']
+  client node['oneview_test']['client800']
   data(
     credentials: {
       type: 'HypervisorClusterProfileV3',

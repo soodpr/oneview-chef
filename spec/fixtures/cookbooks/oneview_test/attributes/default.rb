@@ -2,7 +2,7 @@
 # Cookbook Name:: oneview_test
 # Attributes:: default
 #
-# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2020 Hewlett Packard Enterprise Development LP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,3 +18,5 @@ default['oneview']['api_version'] = 200
 # default['oneview']['api_variant'] = 'C7000'
 
 default['oneview_test']['client'] = { url: 'https://oneview.example.com', user: 'Administrator', password: 'secret123', api_version: 200 }
+
+default['oneview_test']['client800'] = { url: 'https://oneview.example.com', user: 'Administrator', password: 'secret123', api_version: 800 }

@@ -13,7 +13,7 @@ module OneviewCookbook
   module API800
     module Synergy
       # HypervisorClusterProfile API800 Synergy provider
-      class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
+      class HypervisorClusterProfileProvider < OneviewCookbook::API800::HypervisorClusterProfileProvider
       end
     end
   end
