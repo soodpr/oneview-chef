@@ -10,12 +10,11 @@
 # specific language governing permissions and limitations under the License.
 
 module OneviewCookbook
-    module API1000
-      module C7000
-        # HypervisorClusterProfile API1000 C7000 provider
-        class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
-        end
+  module API1000
+    module C7000
+      # HypervisorClusterProfile API1000 C7000 provider
+      class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
       end
     end
   end
-  
+end

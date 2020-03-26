@@ -10,12 +10,11 @@
 # specific language governing permissions and limitations under the License.
 
 module OneviewCookbook
-    module API800
-      module Synergy
-        # HypervisorClusterProfile API800 Synergy provider
-        class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
-        end
+  module API800
+    module Synergy
+      # HypervisorClusterProfile API800 Synergy provider
+      class HypervisorClusterProfileProvider < OneviewCookbook::API800::C7000::HypervisorClusterProfileProvider
       end
     end
   end
-  
+end

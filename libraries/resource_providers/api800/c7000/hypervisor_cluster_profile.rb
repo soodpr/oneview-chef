@@ -10,15 +10,14 @@
 # specific language governing permissions and limitations under the License.
 
 module OneviewCookbook
-    module API800
-      # HypervisorClusterProfile API800 provider
-      class HypervisorClusterProfileProvider < ResourceProvider 
-        def add_if_missing
-          return Chef::Log.info("#{@resource_name} '#{@name}' already exists.") if @item.exists?
-          @item.data.delete('name')
-          super
-        end
+  module API800
+    # HypervisorClusterProfile API800 provider
+    class HypervisorClusterProfileProvider < ResourceProvider
+      def add_if_missing
+        return Chef::Log.info("#{@resource_name} '#{@name}' already exists.") if @item.exists?
+        @item.data.delete('name')
+        super
       end
     end
   end
-  
+end
