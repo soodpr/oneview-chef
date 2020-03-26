@@ -87,6 +87,11 @@ describe 'oneview_test::default' do
     expect(chef_run).to_not remove_oneview_firmware('')
     expect(chef_run).to_not create_oneview_firmware_custom_spp('')
 
+    # oneview_hypervisor_cluster_profile
+    expect(chef_run).to_not add_oneview_hypervisor_cluster_profile('')
+    expect(chef_run).to_not add_oneview_hypervisor_cluster_profile_if_missing('')
+    expect(chef_run).to_not remove_oneview_hypervisor_cluster_profile('')
+
     # oneview_id_pool
     expect(chef_run).to_not update_oneview_id_pool('')
     expect(chef_run).to_not allocate_oneview_id_pool_list('')
